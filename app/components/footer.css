@@ -1,0 +1,31 @@
+footer{
+    border-top: solid 2px #0ac9b4;
+    width: 90%;
+    margin: auto;
+}
+
+footer .links{
+    margin-top: 2%;
+}
+
+footer .links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+}
+
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer li a:hover{
+    color: #0ac9b4;
+}
+
+footer .logo-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

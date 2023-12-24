@@ -1,0 +1,18 @@
+#footer {
+    background-color: #0ac9b4;
+    color: #FFF;
+}
+
+.footerMenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footerMenu .liFooter{
+    list-style: none;
+}
+
+.footerMenu .liFooter:hover{
+    color: blue;
+}

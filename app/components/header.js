@@ -1,45 +1,53 @@
-import Script from 'next/script'
+'use client'
+import './scroll'
 import Image from 'next/image'
-import './header.css'
+import styles from './header.module.css'
+import Link from 'next/link'
 
 export default function Header(){
     return (
-        <header>
-            <Script src="./scroll.js" />
-            <ul>
-                <li>Cartelera</li>
-                <li class="dropdown">
-                    <button>Eventos</button>
-                    <div class="dropdown-content">
-                        <a href="">Alquiler</a>
-                        <a href="">V.O</a>
-                    </div>
-                </li>
-                <Image class="image_reveal social_img" src="/../img/logo/icoLogo.png" alt="logo" width={30} height={30}/>
-                <li class="dropdown">
-                    <button>Promociones</button>
-                    <div class="dropdown-content">
-                        <a href="">Ofertas</a>
-                        <a href="">Sorteos</a>
-                        <a href="">Regalos</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <button>Conócenos</button>
-                    <div class="dropdown-content">
-                        <a href="">FAQS</a>
-                        <a href="">Localizaciones</a>
-                        <a href="">Descripciones</a>
-                    </div>
-                </li>
-                <div class="dropdown">
-                    <Image src="/../img/avatar.png" alt="perfil"  width={30} height={30}/>
-                    <div class="dropdown-content dropdown-last">
-                        <a href="">Log-In</a>
-                        <a href="">Sign-In</a>
+        <nav id={styles.nav}>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col'>
+                        <ul id={styles.links}>
+                            <li className={styles.link}><Image src={"/letterLogo.png"} width={80} height={30} alt='logo' /></li>
+                            <li className={styles.link}><Link href={""} style={{textDecoration:'none', color:'#000'}}>Cartelera</Link></li>
+                            <li className={`${styles.link} ${styles.dropdown}`}>
+                                <button>Eventos</button>
+                                <div className={styles.dropdown_content}>
+                                    <Link href={""}>Alquiler</Link>
+                                    <Link href={""}>V.O</Link>
+                                </div>
+                            </li>
+                            <li className={styles.link}><Image className="image_reveal" src={"/icoLogo.png"} width={50} height={40} alt='logo' /></li>
+                            <li className={`${styles.link} ${styles.dropdown}`}>
+                                <button>Promociones</button>
+                                <div className={styles.dropdown_content}>
+                                    <Link href={""}>Ofertas</Link>
+                                    <Link href={""}>Sorteos</Link>
+                                    <Link href={""}>Regalos</Link>
+                                </div>
+                            </li>
+                            <li className={`${styles.link} ${styles.dropdown}`}>
+                                <button>Conócenos</button>
+                                <div className={styles.dropdown_content}>
+                                    <Link href={""}>FAQS</Link>
+                                    <Link href={""}>Localizaciones</Link>
+                                    <Link href={""}>Descripciones</Link>
+                                </div>
+                            </li>
+                            <li className={`${styles.link} ${styles.dropdown}`}>
+                                <Image src="/perfil.png" alt="perfil"  width={30} height={30}/>
+                                <div className={`${styles.dropdown_content} ${styles.dropdown_last}`}>
+                                    <Link href={""}>Log-In</Link>
+                                    <Link href={""}>Sign-Up</Link>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </ul>
-        </header>
+            </div>
+        </nav>
     )
 }

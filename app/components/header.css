@@ -3,7 +3,7 @@
 header{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
     background-image: url(/../img/logo/letterLogo.png);
     background-repeat: no-repeat;
     background-size: 10%;
@@ -24,7 +24,7 @@ header ul img:nth-of-type(1){
 header ul div{
     width: fit-content;
     height: fit-content;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 header ul div img:nth-of-type(1)
@@ -38,10 +38,10 @@ header ul li{
     margin: 1em;
 }
 
-header ul li:nth-of-type(4), li:nth-of-type(3), li:nth-of-type(2), img:nth-of-type(1)
+/*header ul li:nth-of-type(4), li:nth-of-type(3), li:nth-of-type(2), img:nth-of-type(1)
 {
-    margin-left: 6.64em;
-}
+    margin-left: 8.64em;
+}*/
 
 header ul .dropdown{
     display: inline-block;

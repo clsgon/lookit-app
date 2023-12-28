@@ -15,8 +15,8 @@ export default function footer(){
                     </ul>
                 </div>
                 <div class="logo-container">
-                    <Image src="/./img/logo/icoLogo.png" alt="icoLogo" width={30} height={30}/>
-                    <Image src="/./img/logo/letterLogo.png" alt="letterLogo" width={30} height={30}/>
+                    <Image src="/icoLogo.png" alt="icoLogo" width={50} height={50}/>
+                    <Image src="/letterLogo.png" alt="letterLogo" width={50} height={50}/>
                 </div>
         </footer>
     )

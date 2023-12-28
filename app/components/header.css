@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(/../img/logo/letterLogo.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 1%;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header ul img:nth-of-type(1){
+    vertical-align: middle;
+}
+
+header ul div{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 0px;
+}
+
+header ul div img:nth-of-type(1)
+{
+    vertical-align: middle;
+    margin-top: 1.8%;
+}
+
+header ul li{
+    list-style: none;
+    margin: 1em;
+}
+
+/*header ul li:nth-of-type(4), li:nth-of-type(3), li:nth-of-type(2), img:nth-of-type(1)
+{
+    margin-left: 8.64em;
+}*/
+
+header ul .dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+header ul .dropdown button{
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    background-color: white;
+}
+
+header ul .dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10%;
+}
+
+header ul .dropdown:hover .dropdown-content{
+    display: block;
+    border: solid 1px white;
+    border-radius: 10%;
+    background-color: white;
+}
+
+header ul .dropdown:hover .dropdown-last{
+    display: block;
+    border: solid 1px white;
+    border-radius: 10%;
+    width: 75px;
+    margin-left: 50px;
+    text-align: right;
+}
+
+header ul .dropdown:hover .dropdown-content a{
+    display: block;
+    text-decoration: none;
+}
+
+header ul .dropdown .dropdown-content a{
+    padding: 5px;
+}

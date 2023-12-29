@@ -1,0 +1,71 @@
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+}
+
+.roomInfo {
+    margin-top: 2.5%;
+    margin-right: 8%;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.rent {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 5px;
+    z-index: 1;
+    background-color: grey;
+    border-radius: 50px;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.roomInfo:hover .rent{
+    background-color: aqua;
+    display: block;
+}
+
+.imgContainer {
+    width: 100%;
+    position: relative;
+}
+
+/*.imgContainer::after {
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, grey, transparent);
+}*/
+
+.imgRoom {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: linear-gradient(to bottom, #ccc, transparent);
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.info{
+    display: flex;
+}
+
+.info > div{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 4%;
+}
+
+.info > div > p{
+    margin-top: 0px;
+}
